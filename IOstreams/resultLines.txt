@@ -1,0 +1,21 @@
+1. package iostreams;
+2. import java.io.*;
+3. public class RWLines {
+4. 
+5. 	public static void main(String[] args)throws IOException {
+6. 	FileReader fr=new FileReader("C:/Users/Test/eclipse-workspace/OOPS Through Java/src/iostreams/RWLines.java");
+7. 	BufferedReader br=new BufferedReader(fr);
+8. 	BufferedWriter bw=new BufferedWriter(new FileWriter("D:/Java Practice DAC/IOstreams/resultLines.txt"));
+9. 	String line=br.readLine();
+10. 	int lc=0;
+11. 	while(line!=null) {
+12. 		lc++;
+13. 		bw.write(lc+". "+line+"\n");
+14. 		line=br.readLine();
+15. 	}
+16. 	System.out.println("LinesCount: "+lc);
+17. 	System.out.println("Wrtiten Succesfully");
+18. 	br.close();
+19. 	bw.close();
+20. 	}
+21. }

@@ -1,0 +1,1 @@
+learning oops through java is an object oriented programming language it robust because of garbage collection and exception handling has many other features such as supports multithreading we can also  implement multiple inheritance using interfaces 
